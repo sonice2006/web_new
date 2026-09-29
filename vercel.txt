@@ -1,0 +1,5 @@
+GitHub에 있는 프로젝트(파일/리포지토리)를 Vercel에 연결하여 배포하는 가장 쉽고 표준적인 방법은 Vercel의 대시보드 웹 UI를 통해 GitHub 계정을 연동하는 방법입니다.
+1.Vercel 로그인 및 GitHub 연동:최초 1회 진행.Vercel 공식 홈페이지에 접속한 후 Log In 또는 Sign Up을 누르고, Continue with GitHub을 선택하여 로그인합니다.
+2.새 프로젝트 생성 (Import):대시보드 메인 화면.대시보드 우측 상단의 [Add New...] 버튼을 누른 뒤 **[Project]**를 선택합니다.
+3.GitHub 리포지토리 선택:Import Git Repository 목록에서 배포하고자 하는 GitHub 리포지토리 옆의 [Import] 버튼을 클릭합니다.만약 목록에 원하는 리포지토리가 보이지 않는다면:검색창 근처의 Adjust GitHub App Permissions 또는 Install GitHub App 링크를 클릭합니다.GitHub 설정 페이지로 이동하면 Vercel이 접근할 수 있는 리포지토리 권한을 All repositories 또는 Only select repositories(해당 리포지토리 지정)로 설정하고 저장합니다.4.프로젝트 설정 및 배포 (Deploy):프로젝트 설정 화면에서 아래 항목들을 확인한 후 [Deploy] 버튼을 클릭합니다.Framework Preset: Next.js, React, Vue, Vite 등 프로젝트 프레임워크가 자동으로 감지됩니다. (일반 HTML/CSS/JS인 경우 Other로 지정)Root Directory: 프로젝트의 루트 경로가 디렉토리 내부라면 설정해 줍니다.Environment Variables: .env 파일에 있는 환경 변수가 있다면 미리 등록해 줍니다.
+5.배포 완료 확인:1~2분 정도의 빌드 과정이 끝나면 화면에 축하 폭죽 애니메이션과 함께 생성된 **공개 URL (예: project-name.vercel.app)**이 제공됩니다.
